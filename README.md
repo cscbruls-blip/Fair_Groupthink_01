@@ -1,7 +1,7 @@
 # FAIR Theory: Groupthink: A Theory of Interdependent Symptom Escalation
 
 **Authors:** Laurine van ’t Hullenaar, Cindy Bruls, Joris Muijs (Group Keep Calm)  
-**Concept DOI:** *[Insert Zenodo Concept DOI after publishing release v0.1.0]*
+**Concept DOI:**  DOI: 10.5072/zenodo.649591
 
 ## Overview & Purpose
 This repository archives a formalized, time-sliced Directed Acyclic Graph (DAG) of **Interdependent Symptom Escalation in Groupthink**, reframing Janis (1971) from a static checklist of group states into a dynamic causal process.
