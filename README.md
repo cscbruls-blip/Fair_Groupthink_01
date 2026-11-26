@@ -1,6 +1,3 @@
-project_path <- file.path("~/theories", "groupthink_escalation")
-
-readme_text <- '
 # FAIR Theory: Groupthink: A Theory of Interdependent Symptom Escalation
 
 **Authors:** Laurine van ’t Hullenaar, Cindy Bruls, Joris Muijs (Group Keep Calm)  
