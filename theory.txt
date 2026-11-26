@@ -1,0 +1,73 @@
+
+dag {
+  concurrence_seeking
+  morality_t0
+  rationalization_t0
+  pressure_t0
+  invulnerability_t0
+  stereotypes_t0
+  self_censorship_t0
+  unanimity_t0
+  mindguards_t0
+  morality_t1
+  rationalization_t1
+  pressure_t1
+  invulnerability_t1
+  stereotypes_t1
+  self_censorship_t1
+  unanimity_t1
+  mindguards_t1
+  defective_decision_making
+
+  # Exogene activatie (Mechanism -> t0)
+  concurrence_seeking -> morality_t0
+  concurrence_seeking -> rationalization_t0
+  concurrence_seeking -> pressure_t0
+  concurrence_seeking -> invulnerability_t0
+  concurrence_seeking -> stereotypes_t0
+  concurrence_seeking -> self_censorship_t0
+  concurrence_seeking -> unanimity_t0
+  concurrence_seeking -> mindguards_t0
+
+  # Autoregressieve paden (t0 -> t1)
+  morality_t0 -> morality_t1
+  rationalization_t0 -> rationalization_t1
+  pressure_t0 -> pressure_t1
+  invulnerability_t0 -> invulnerability_t1
+  stereotypes_t0 -> stereotypes_t1
+  self_censorship_t0 -> self_censorship_t1
+  unanimity_t0 -> unanimity_t1
+  mindguards_t0 -> mindguards_t1
+
+  # Centrale drivers: cross-links (t0 -> t1)
+  morality_t0 -> stereotypes_t1
+  morality_t0 -> invulnerability_t1
+  morality_t0 -> pressure_t1
+  morality_t0 -> rationalization_t1
+
+  rationalization_t0 -> invulnerability_t1
+  rationalization_t0 -> unanimity_t1
+  rationalization_t0 -> mindguards_t1
+
+  pressure_t0 -> self_censorship_t1
+  pressure_t0 -> unanimity_t1
+  pressure_t0 -> mindguards_t1
+
+  # Perifere symptomen: cross-links (t0 -> t1)
+  invulnerability_t0 -> rationalization_t1
+  stereotypes_t0 -> morality_t1
+  self_censorship_t0 -> unanimity_t1
+  unanimity_t0 -> self_censorship_t1
+  mindguards_t0 -> invulnerability_t1
+
+  # Uitkomst (t1 -> Defective Decision-Making)
+  morality_t1 -> defective_decision_making
+  rationalization_t1 -> defective_decision_making
+  pressure_t1 -> defective_decision_making
+  invulnerability_t1 -> defective_decision_making
+  stereotypes_t1 -> defective_decision_making
+  self_censorship_t1 -> defective_decision_making
+  unanimity_t1 -> defective_decision_making
+  mindguards_t1 -> defective_decision_making
+}
+
